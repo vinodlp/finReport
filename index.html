@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Report Generator</title>
+    <style>
+        label {
+            font-weight: bold;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stock Report Generator</h1>
+
+    <!-- Form for Ticker Input -->
+    <form id="ticker-input-form">
+        <label for="ticker-input">Enter Stock Ticker:</label>
+        <input type="text" id="ticker-input" placeholder="AAPL, MSFT, etc." />
+        <button type="submit">Add Ticker</button>
+    </form>
+
+    <!-- Ticker List -->
+    <h3>Tickers Added:</h3>
+    <ul id="ticker-list"></ul>
+
+    <!-- Generate Report Button -->
+    <button class="generate-report-btn" disabled>Generate Report</button>
+
+    <!-- Include the JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
